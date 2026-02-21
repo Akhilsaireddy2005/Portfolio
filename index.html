@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Portfolio of Jaggavarapu Akhil Sai Reddy — AI & Data Science student, Full Stack Developer specializing in React, Django, Python and machine learning." />
+    <title>Akhil Sai Reddy | AI & Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ═══════════════ NAVBAR ═══════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-bracket"></span>Portfolio</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+                <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+                <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+                <li><a href="#certifications" class="nav-link" id="nav-cert">Certifications</a></li>
+                <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+            </ul>
+            <a href="assets/resume.pdf" class="btn btn-outline nav-resume" download="Akhil_Sai_Reddy_Resume.pdf">
+                <i class="fas fa-download"></i> Resume
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting reveal-up">👋 Hello, I'm</p>
+                <h1 class="hero-name reveal-up">J.Akhil Sai Reddy</h1>
+                <div class="hero-role reveal-up">
+                    <span class="role-prefix">I'm a </span>
+                    <span class="typed-text" id="typedText"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-desc reveal-up">
+                    AI & Data Science student with expertise in machine learning and modern web technologies including
+                    React and Django. Building full-stack applications with strong problem-solving skills.
+                </p>
+                <div class="hero-actions reveal-up">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">
+                        <i class="fas fa-paper-plane"></i> Let's Talk
+                    </a>
+                </div>
+                <div class="hero-social reveal-up">
+                    <a href="https://github.com/Akhilsaireddy2005" target="_blank" class="social-icon"
+                        aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/j-akhil-sai-reddy-096308274" target="_blank"
+                        class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:akhiljaggavarapu@gmail.com" class="social-icon" aria-label="Email"><i
+                            class="fas fa-envelope"></i></a>
+                    <a href="tel:+919908434529" class="social-icon" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="hero-image reveal-right">
+                <div class="image-frame">
+                    <img src="assets/profile.png" alt="Jaggavarapu Akhil Sai Reddy" class="profile-img" />
+                    <div class="image-ring"></div>
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fas fa-brain"></i>
+                    <span>AI & ML</span>
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fas fa-code"></i>
+                    <span>Full Stack Dev</span>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <span class="scroll-dot"></span>
+        </a>
+    </section>
+
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Who I Am</h2>
+                <p class="section-subtitle">Passionate developer at the intersection of AI and full-stack web
+                    development</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal-left">
+                    <div class="about-img-frame">
+                        <img src="assets/profile.png" alt="Akhil Sai Reddy" class="about-img" />
+                        <div class="about-img-decor"></div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-num" data-count="9">0</span><span class="stat-plus">.45</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num" data-count="2">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num" data-count="5">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Certs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <p class="about-text">
+                        I'm <strong>Jaggavarapu Akhil Sai Reddy</strong>, an Artificial Intelligence and Data Science
+                        student at KLH University with a CGPA of 9.45/10. I specialize in building full-stack web
+                        applications using React, Django, and Python.
+                    </p>
+                    <p class="about-text">
+                        With hands-on experience from an Infosys Springboard internship where I developed an AI-Powered
+                        Loan Eligibility Advisory System, I combine machine learning expertise with modern web
+                        development skills to create impactful solutions.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Telangana, India</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>akhiljaggavarapu@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>B.Tech AI & DS — KLH University</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Available for Opportunities</span>
+                        </div>
+                    </div>
+
+                    <!-- Education timeline -->
+                    <div class="edu-timeline">
+                        <div class="edu-item">
+                            <div class="edu-dot"></div>
+                            <div class="edu-body">
+                                <span class="edu-year">2023 – 2027</span>
+                                <strong>B.Tech — AI & Data Science</strong>
+                                <span>KLH University &nbsp;·&nbsp; CGPA: 9.45/10</span>
+                            </div>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-dot"></div>
+                            <div class="edu-body">
+                                <span class="edu-year">2023</span>
+                                <strong>Class 12th — Intermediate</strong>
+                                <span>Telangana State Board &nbsp;·&nbsp; 977/1000</span>
+                            </div>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-dot"></div>
+                            <div class="edu-body">
+                                <span class="edu-year">2021</span>
+                                <strong>Class 10th — Secondary Education</strong>
+                                <span>Telangana Board &nbsp;·&nbsp; GPA: 10/10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary mt-2">
+                        <i class="fas fa-handshake"></i> Hire Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ SKILLS ═══════════════ -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Technologies I work with to build modern applications</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Web Development -->
+                <div class="skills-card glass-card reveal-up">
+                    <div class="skills-card-header">
+                        <div class="skills-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>HTML / CSS</span><span class="skill-pct">90%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>JavaScript</span><span class="skill-pct">82%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>React.js</span><span class="skill-pct">80%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Django</span><span class="skill-pct">85%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Programming & AI -->
+                <div class="skills-card glass-card reveal-up" style="animation-delay:0.15s">
+                    <div class="skills-card-header">
+                        <div class="skills-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Programming & AI</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Python</span><span class="skill-pct">88%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Machine Learning</span><span class="skill-pct">78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>C / Java</span><span class="skill-pct">75%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Deep Learning / NLP</span><span class="skill-pct">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tools & Platforms -->
+                <div class="skills-card glass-card reveal-up" style="animation-delay:0.3s">
+                    <div class="skills-card-header">
+                        <div class="skills-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Git / GitHub</span><span class="skill-pct">85%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Node.js</span><span class="skill-pct">72%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="72"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Android Studio</span><span class="skill-pct">65%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>AWS Cloud</span><span class="skill-pct">68%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="68"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech badges -->
+            <div class="tech-badges reveal-up">
+                <span class="badge"><i class="fab fa-python"></i> Python</span>
+                <span class="badge"><i class="fab fa-react"></i> React.js</span>
+                <span class="badge"><i class="fas fa-server"></i> Django</span>
+                <span class="badge"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="badge"><i class="fab fa-node-js"></i> Node.js</span>
+                <span class="badge"><i class="fab fa-git-alt"></i> Git</span>
+                <span class="badge"><i class="fab fa-aws"></i> AWS</span>
+                <span class="badge"><i class="fas fa-brain"></i> Machine Learning</span>
+                <span class="badge"><i class="fas fa-mobile-alt"></i> React Native</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ PROJECTS ═══════════════ -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Things I've built that I'm proud of</p>
+            </div>
+            <div class="projects-grid projects-grid-2">
+
+                <!-- Project 1 -->
+                <article class="project-card glass-card reveal-up">
+                    <div class="project-img-wrap">
+                        <img src="assets/project1.jpg" alt="Library Management System" class="project-img"
+                            loading="lazy" />
+                        <div class="project-overlay">
+                            <a href="https://library-management-system-1-0tvj.onrender.com/" rel="noopener"
+                                class="overlay-btn" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i> Live
+                                Demo</a>
+                            <a href="https://github.com/Akhilsaireddy2005/LibraryManagementSystem" class="overlay-btn"
+                                aria-label="Source Code"><i class="fab fa-github"></i>
+                                Code</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Django ORM</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                        <h3 class="project-title">Library Management System</h3>
+                        <p class="project-desc">A full-featured Library Management System built with Django, featuring
+                            book listing, search, issue/return tracking, user registration, and admin control.
+                            Implemented efficient CRUD operations using Django ORM with responsive HTML-Bootstrap
+                            templates based on the MTV architecture.</p>
+                        <div class="project-links">
+                            <a href="https://library-management-system-1-0tvj.onrender.com/" rel="noopener"
+                                class="link-btn"><i class="fas fa-globe"></i> Live Demo</a>
+                            <a href="https://github.com/Akhilsaireddy2005/LibraryManagementSystem"
+                                class="link-btn link-btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card glass-card reveal-up" style="animation-delay:0.15s">
+                    <div class="project-img-wrap">
+                        <img src="assets/project2.avif" alt="Food Recipe App" class="project-img" loading="lazy" />
+                        <div class="project-overlay">
+                            <a href="https://github.com/Akhilsaireddy2005/RecipeApp" class="overlay-btn"
+                                aria-label="Source Code"><i class="fab fa-github"></i>
+                                Code</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Expo</span>
+                            <span class="tag">React Hooks</span>
+                            <span class="tag">JSON API</span>
+                        </div>
+                        <h3 class="project-title">Food Recipe App</h3>
+                        <p class="project-desc">A cross-platform Food Recipe mobile app built with React Native and
+                            Expo. Features category-wise browsing, search, and detailed recipe views. Utilized React
+                            Hooks for state management and created reusable components, with recipes stored in a local
+                            JSON file.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Akhilsaireddy2005/RecipeApp" class="link-btn link-btn-ghost"><i
+                                    class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 — Internship project -->
+                <article class="project-card glass-card reveal-up" style="animation-delay:0.3s">
+                    <div class="project-img-wrap">
+                        <img src="assets/project3.webp" alt="AI Loan Eligibility Advisory System" class="project-img"
+                            loading="lazy" />
+                        <div class="project-overlay">
+                            <!-- <a href="#" class="overlay-btn" aria-label="Live Demo"><i
+                                    class="fas fa-external-link-alt"></i> Live Demo</a> -->
+                            <a href="https://github.com/Akhilsaireddy2005/Development-of-AI-Powered-Loan-Eligibility-Advisory-System"
+                                class="overlay-btn" aria-label="Source Code"><i class="fab fa-github"></i>
+                                Code</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Infosys</span>
+                        </div>
+                        <h3 class="project-title">AI Loan Eligibility Advisor</h3>
+                        <p class="project-desc">Developed during Infosys Springboard Virtual Internship 6.0 (Aug–Oct
+                            2025). An AI-driven system to analyze customer profiles and provide intelligent loan
+                            eligibility recommendations using machine learning models, streamlining the loan approval
+                            process.</p>
+                        <div class="project-links">
+                            <!-- <a href="#" class="link-btn"><i class="fas fa-globe"></i> Live Demo</a> -->
+                            <a href="https://github.com/Akhilsaireddy2005/Development-of-AI-Powered-Loan-Eligibility-Advisory-System"
+                                class="link-btn link-btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            <div class="projects-cta reveal-up">
+                <a href="https://github.com/Akhilsaireddy2005" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i> View All on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CERTIFICATIONS ═══════════════ -->
+    <section class="certifications section" id="certifications">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Achievements</span>
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Credentials I've earned along the way</p>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card glass-card reveal-up">
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <div class="cert-body">
+                        <h4>AWS Certified Cloud Practitioner</h4>
+                        <span class="cert-issuer">Amazon Web Services</span>
+                    </div>
+                    <a href="#" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="cert-card glass-card reveal-up" style="animation-delay:0.1s">
+                    <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+                    <div class="cert-body">
+                        <h4>Convolutional Neural Networks</h4>
+                        <span class="cert-issuer">Coursera</span>
+                    </div>
+                    <a href="#" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="cert-card glass-card reveal-up" style="animation-delay:0.2s">
+                    <div class="cert-icon"><i class="fas fa-language"></i></div>
+                    <div class="cert-body">
+                        <h4>Deep Learning for NLP</h4>
+                        <span class="cert-issuer">Coursera</span>
+                    </div>
+                    <a href="#" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="cert-card glass-card reveal-up" style="animation-delay:0.3s">
+                    <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                    <div class="cert-body">
+                        <h4>Certified Advanced Automation Professional</h4>
+                        <span class="cert-issuer">Automation Anywhere</span>
+                    </div>
+                    <a href="#" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="cert-card glass-card reveal-up" style="animation-delay:0.4s">
+                    <div class="cert-icon"><i class="fas fa-database"></i></div>
+                    <div class="cert-body">
+                        <h4>MongoDB Associate Developer</h4>
+                        <span class="cert-issuer">MongoDB University</span>
+                    </div>
+                    <a href="#" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Have a project in mind? I'd love to hear about it.</p>
+            </div>
+            <div class="contact-grid">
+                <!-- Info side -->
+                <div class="contact-info reveal-left">
+                    <h3>Ready to build something <span class="gradient-text">amazing?</span></h3>
+                    <p>Whether you need a web application, an AI/ML solution, or just want to collaborate — my inbox is
+                        always open.</p>
+                    <div class="contact-methods">
+                        <a href="mailto:akhiljaggavarapu@gmail.com" class="contact-method">
+                            <div class="method-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="method-label">Email</span>
+                                <span class="method-value">akhiljaggavarapu@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+919908434529" class="contact-method">
+                            <div class="method-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span class="method-label">Phone</span>
+                                <span class="method-value">+91 9908434529</span>
+                            </div>
+                        </a>
+                        <div class="contact-method">
+                            <div class="method-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="method-label">Location</span>
+                                <span class="method-value">Telangana, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/Akhilsaireddy2005" target="_blank" class="social-icon"
+                            aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/j-akhil-sai-reddy-096308274" target="_blank"
+                            class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:akhiljaggavarapu@gmail.com" class="social-icon" aria-label="Email"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <!-- Form side -->
+                <div class="contact-form-wrap reveal-right">
+                    <form class="contact-form glass-card" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <div class="input-wrap">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" placeholder="John Doe" autocomplete="name" />
+                            </div>
+                            <span class="field-error" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <div class="input-wrap">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="john@example.com"
+                                    autocomplete="email" />
+                            </div>
+                            <span class="field-error" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <div class="input-wrap">
+                                <i class="fas fa-tag"></i>
+                                <input type="text" id="subject" name="subject" placeholder="Project Inquiry" />
+                            </div>
+                            <span class="field-error" id="subjectError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <div class="input-wrap textarea-wrap">
+                                <i class="fas fa-message"></i>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Tell me about your project..."></textarea>
+                            </div>
+                            <span class="field-error" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Message sent! I'll get back to you soon.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="#home" class="logo">
+                    <!-- <span class="logo-bracket">&lt;</span>Akhil<span class="logo-accent">Dev</span><span
+                        class="logo-bracket">/&gt;</span>
+                </a>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul> -->
+    <!-- <div class="footer-socials">
+                        <a href="https://github.com/Akhilsaireddy2005" target="_blank" class="social-icon"
+                            aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/j-akhil-sai-reddy-096308274" target="_blank"
+                            class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+            </div> -->
+    <!-- <div class="footer-bottom">
+                        <p>&copy; 2026 Jaggavarapu Akhil Sai Reddy. Crafted with <i class="fas fa-heart"></i> and lots
+                            of ☕</p>
+                    </div> -->
+    <!-- </div>
+    </footer> -->
+
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
