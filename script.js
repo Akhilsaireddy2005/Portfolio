@@ -217,7 +217,7 @@ function validateForm() {
 }
 
 /* ─── PASTE YOUR GOOGLE APPS SCRIPT URL HERE after deployment ─── */
-const GOOGLE_SHEET_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+const GOOGLE_SHEET_URL = 'https://docs.google.com/spreadsheets/d/1BK4VwYXXFbLwY86Dp2lY5ZxvbsZYgfD4SOrRXLPRom8/edit?usp=sharing';
 
 contactForm && contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
