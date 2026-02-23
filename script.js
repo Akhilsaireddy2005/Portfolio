@@ -216,12 +216,14 @@ function validateForm() {
     return valid;
 }
 
+/* ─── PASTE YOUR GOOGLE APPS SCRIPT URL HERE after deployment ─── */
+const GOOGLE_SHEET_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+
 contactForm && contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     if (!validateForm()) return;
 
-    // Simulate sending — replace with real API call (EmailJS, Formspree, etc.)
     const icon = submitBtn.querySelector('i');
     const text = submitBtn.querySelector('span');
 
@@ -229,18 +231,39 @@ contactForm && contactForm.addEventListener('submit', async (e) => {
     icon.className = 'fas fa-circle-notch fa-spin';
     text.textContent = 'Sending…';
 
-    await new Promise(r => setTimeout(r, 1800)); // simulate network delay
+    try {
+        const formData = {
+            name: document.getElementById('name').value.trim(),
+            email: document.getElementById('email').value.trim(),
+            subject: document.getElementById('subject').value.trim(),
+            message: document.getElementById('message').value.trim(),
+            date: new Date().toLocaleString()
+        };
 
-    // Show success
-    contactForm.classList.add('sent');
-    formSuccess.classList.add('show');
-    contactForm.reset();
+        await fetch(GOOGLE_SHEET_URL, {
+            method: 'POST',
+            mode: 'no-cors',            // Google Apps Script requires no-cors
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        });
 
-    // Reset button
-    submitBtn.disabled = false;
-    icon.className = 'fas fa-check';
-    text.textContent = 'Message Sent!';
-    submitBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+        // Show success
+        contactForm.classList.add('sent');
+        formSuccess.classList.add('show');
+        contactForm.reset();
+
+        icon.className = 'fas fa-check';
+        text.textContent = 'Message Sent!';
+        submitBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+
+    } catch (err) {
+        console.error('Form submission error:', err);
+        icon.className = 'fas fa-exclamation-triangle';
+        text.textContent = 'Failed — try again';
+        submitBtn.style.background = 'linear-gradient(135deg, #ef4444, #b91c1c)';
+    } finally {
+        submitBtn.disabled = false;
+    }
 
     setTimeout(() => {
         icon.className = 'fas fa-paper-plane';
