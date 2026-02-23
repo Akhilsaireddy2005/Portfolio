@@ -217,7 +217,7 @@ function validateForm() {
 }
 
 /* ─── PASTE YOUR GOOGLE APPS SCRIPT URL HERE after deployment ─── */
-const GOOGLE_SHEET_URL = 'https://docs.google.com/spreadsheets/d/1BK4VwYXXFbLwY86Dp2lY5ZxvbsZYgfD4SOrRXLPRom8/edit?usp=sharing';
+const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbzzeyEcfPnnB1wnIglEXjW2REo6hUWuSE4lSIAJvvGcDTJEVk1p0H5SJD-tQi0Rp2dn7A/exec';
 
 contactForm && contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
